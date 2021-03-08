@@ -1,19 +1,17 @@
 <style>
-  body { margin: 0; height: 100vh; }
+
+  div {
+    width: 20;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0px 0px 10px 8px grey,
+      0px 0px 0px 20px black,
+      0px 0px 10px 8px grey;
+
+  }
+
 </style>
 
-<!-- you can't see the audio, it plays in the background -->
-<!-- but if you'd like, try adding: controls="true" -->
-<audio src="audios/electro-pop.mp3" loop="true"></audio>
-
-<!-- track by frankum -->
-<!-- https://freesound.org/people/frankum/sounds/384468/ -->
-
-<script>
-  // audio and video tracks can't start playing until
-  // the viewer has interacted with the page.
-  // the JavaScript code below plays the audio element 
-  // if the viewer clicks anywhere on the page.
-  const track = document.querySelector('audio')
-  document.body.addEventListener('click', () => track.play())
-</script>
+<div></div>
