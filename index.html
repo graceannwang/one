@@ -8,7 +8,7 @@
     background-color:black;
   }
 
-  div {
+  #box {
     width: 20;
     height: 0;
     position: absolute;
@@ -50,5 +50,27 @@
 </style>
 
 <body>
-  <div></div>
+  <div id="box"></div>
 </body>
+
+<script>
+  document.getElementById("box").style.boxShadow 
+    = "0px 0px 0px 10px pink, 0px 0px 0px 20px purple";
+
+  /* TODO: getBoxShadowString
+     
+     spread: spread radius
+     blur: blur radius
+     col: color
+     
+     Returns box shadow string
+  */
+  function getBoxShadowString(spread, blur, col) {
+    
+  }
+  
+  /* TODO: constructBoxShadowStrings
+    
+  */
+  
+</script>
